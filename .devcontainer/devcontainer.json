@@ -5,7 +5,16 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
 	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/christophermacgown/devcontainer-features/minio-client:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.live-server",
+				"firsttris.vscode-jest-runner"
+			]
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
